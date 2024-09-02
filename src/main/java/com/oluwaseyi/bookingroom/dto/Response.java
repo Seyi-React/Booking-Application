@@ -14,7 +14,7 @@ import java.util.List;
 @Builder
 public class Response {
 
-    
+
     private int code;
     private String message;
     private String token;

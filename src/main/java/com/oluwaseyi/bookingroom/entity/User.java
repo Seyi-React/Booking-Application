@@ -24,7 +24,7 @@ public class User implements UserDetails {
     private  String password;
     private  String role;
 
-
+     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     private List<Booking> bookings = new ArrayList<>();
 
 
